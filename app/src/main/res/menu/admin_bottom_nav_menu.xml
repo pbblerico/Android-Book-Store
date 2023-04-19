@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/manage"
+        android:title="manage"
+        android:icon="@drawable/baseline_manage_accounts"
+        />
+
+    <item
+        android:id="@+id/books"
+        android:title="books"
+        android:icon="@drawable/baseline_books"
+        />
+
+    <item
+        android:id="@+id/sett"
+        android:title="settings"
+        android:icon="@drawable/baseline_settings_purple"
+        />
+
+</menu>

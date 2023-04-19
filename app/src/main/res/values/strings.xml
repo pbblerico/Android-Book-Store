@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Book Store</string>
+    <string name="log_in_text">Log In</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="greetings">Welcome!</string>
+    <string name="intro">It\'s book store, please log in to start. If you don\'t have an account please sign up </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

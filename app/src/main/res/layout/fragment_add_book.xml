@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/newBook"
+    android:padding="5dp"
+    tools:context=".fragments.admin.book.AddBookFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_return"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/baseline_return"
+                android:background="@drawable/btn_style"/>
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add new Book"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textColor="@color/dark_p"
+            android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book name"
+            android:padding="8dp"
+            android:textSize="25dp"
+            android:background="@drawable/rounded_form"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:padding="8dp"
+            android:textSize="25dp"
+            android:background="@drawable/rounded_form"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Author"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_marginRight="10dp"
+                android:textSize="25dp"
+                android:background="@drawable/rounded_form"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Cost"
+                android:padding="8dp"
+                android:textSize="25dp"
+                android:background="@drawable/rounded_form"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:textSize="25dp"
+                android:background="@drawable/rounded_form"
+                android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sbmtBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="fill_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="Add"
+                android:background="@drawable/btn_style"
+                />
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.admin.book.SearchBookFragment"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <EditText
+            android:id="@+id/bookET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book"
+            android:textColorHint="@color/dark_p"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/baseline_search"
+            android:background="@drawable/rounded_form"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/add_btn"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_style"
+            android:src="@drawable/baseline_add"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_marginBottom="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/book_row">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

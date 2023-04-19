@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CategoryDetailActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_style"
+        android:textColor="@color/dark_p"
+        android:textStyle="italic|bold"
+        android:textSize="40dp"
+        android:text="Category name"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        ></TextView>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/bookET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book"
+            android:textColorHint="@color/dark_p"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/baseline_search"
+            android:background="@drawable/rounded_form"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/add_btn"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_style"
+            android:src="@drawable/baseline_add"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_marginBottom="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/book_row_user">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

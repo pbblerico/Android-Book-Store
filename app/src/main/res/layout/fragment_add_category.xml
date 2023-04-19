@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.admin.category.AddCategoryFragment"
+    android:orientation="vertical"
+    android:paddingHorizontal="5dp"
+    android:layout_below="@id/top_bar"
+    >
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add new Category"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textColor="@color/dark_p"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:orientation="horizontal"
+            android:background="@color/purple_200">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_return"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_return"
+            android:background="@drawable/btn_style_white"/>
+
+        <EditText
+            android:id="@+id/categoryAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Category"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/dark_p"
+            android:padding="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_form"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Add"
+            android:background="@drawable/btn_style_white"/>
+
+        </LinearLayout>
+
+</LinearLayout>

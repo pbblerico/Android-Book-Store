@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.admin.AdminManageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/solid_shape"
+        android:layout_gravity="center"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="categories"
+            android:textColor="@color/dark_p"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_marginEnd="5sp"/>
+<!--            android:drawableStart="@drawable/baseline_category"-->
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="books"
+            android:textColor="@color/dark_p"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_marginEnd="5sp"/>
+<!--            android:drawableStart="@drawable/baseline_books"-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_p"
+            android:text="users"
+            android:layout_weight="1"
+            android:layout_marginEnd="5sp"
+            android:background="@null"/>
+<!--            android:drawableStart="@drawable/baseline_manage_accounts"-->
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/child_fragment_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
