@@ -47,7 +47,7 @@ class LoginFragment: Fragment(R.layout.login_fragment), View.OnClickListener {
     }
 
     private fun validateData(): Boolean {
-        if(email.isEmpty() || password.isEmpty()) {
+        if (email.isEmpty() || password.isEmpty()) {
             Toast.makeText(cont, "please fill all fields", Toast.LENGTH_SHORT).show()
             return false
         }
@@ -59,7 +59,7 @@ class LoginFragment: Fragment(R.layout.login_fragment), View.OnClickListener {
         this.email = binding.uname.text.toString().trim()
         this.password = binding.pass.text.toString().trim()
 
-        if(validateData()) login()
+        if (validateData()) login()
     }
 
     private fun login() {
@@ -70,7 +70,7 @@ class LoginFragment: Fragment(R.layout.login_fragment), View.OnClickListener {
             binding.pass.setText("")
 
             mainActivity.replaceMenu()
-        }.addOnFailureListener {e ->
+        }.addOnFailureListener { e ->
             Toast.makeText(cont, "Wrong email or password", Toast.LENGTH_SHORT).show()
             Log.e("TAG", "$e")
         }
@@ -80,18 +80,17 @@ class LoginFragment: Fragment(R.layout.login_fragment), View.OnClickListener {
         val fbUser = FirebaseAuth.getInstance().currentUser!!
 
         val ref = FirebaseDatabase.getInstance().getReference("Users")
-        ref.child(fbUser.uid).addListenerForSingleValueEvent(object: ValueEventListener {
+        ref.child(fbUser.uid).addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                when(snapshot.child("userType").value) {
+                when (snapshot.child("userType").value) {
                     "User" -> Toast.makeText(cont, "User", Toast.LENGTH_SHORT).show()
                     "Admin" -> Toast.makeText(cont, "Admin", Toast.LENGTH_SHORT).show()
                 }
             }
+
             override fun onCancelled(error: DatabaseError) {
 
             }
         })
     }
-
-
 }
