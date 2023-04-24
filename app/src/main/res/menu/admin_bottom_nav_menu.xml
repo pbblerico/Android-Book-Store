@@ -2,20 +2,34 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/manage"
-        android:title="manage"
+        android:title="@string/manage"
         android:icon="@drawable/baseline_manage_accounts"
         />
 
     <item
-        android:id="@+id/books"
-        android:title="books"
+        android:id="@+id/catalog"
+        android:title="@string/catalog"
         android:icon="@drawable/baseline_books"
         />
 
     <item
+        android:id="@+id/books"
+        android:title="@string/books"
+        android:icon="@drawable/baseline_books"
+        />
+
+    <item
+        android:id="@+id/cart"
+        android:title="@string/cart"
+        android:icon="@drawable/baseline_shopping_cart_24"/>
+
+
+
+    <item
         android:id="@+id/sett"
-        android:title="settings"
+        android:title="@string/sett"
         android:icon="@drawable/baseline_settings_purple"
         />
+
 
 </menu>

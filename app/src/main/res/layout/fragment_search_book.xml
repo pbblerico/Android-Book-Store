@@ -17,7 +17,7 @@
             android:id="@+id/bookET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Book"
+            android:hint="@string/book"
             android:textColorHint="@color/dark_p"
             android:padding="15dp"
             android:layout_weight="1"

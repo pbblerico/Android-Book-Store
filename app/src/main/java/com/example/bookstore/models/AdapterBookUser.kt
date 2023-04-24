@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.bookstore.activity.BookDetailActivity
 import com.example.bookstore.databinding.BookRowUserBinding
 import com.example.bookstore.filters.FilterBookUser
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 class AdapterBookUser: RecyclerView.Adapter<AdapterBookUser.HolderBookUser>, Filterable {
@@ -32,6 +34,7 @@ class AdapterBookUser: RecyclerView.Adapter<AdapterBookUser.HolderBookUser>, Fil
         var category: TextView = binding.bookCat
         var cost: TextView = binding.bookCost
         var desc: TextView = binding.bookDesc
+        var addToCart: ImageButton = binding.cart
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HolderBookUser {
@@ -64,6 +67,29 @@ class AdapterBookUser: RecyclerView.Adapter<AdapterBookUser.HolderBookUser>, Fil
             intent.putExtra("bookId", id)
             context.startActivity(intent)
         }
+
+        holder.addToCart.setOnClickListener {
+            addToCart(id)
+        }
+
+
+    }
+
+    private fun addToCart(id: String) {
+        val timestamp = System.currentTimeMillis()
+
+        val hashMap = HashMap<String, Any>()
+        hashMap["id"] = id
+        hashMap["timestamp"] = timestamp
+
+        val ref = FirebaseDatabase.getInstance().getReference("Users")
+        ref.child(FirebaseAuth.getInstance().uid!!).child("Cart").child(id)
+            .setValue(hashMap)
+            .addOnSuccessListener {
+                Toast.makeText(context, "Added to cart", Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener {e->
+                Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show()
+            }
     }
 
     override fun getFilter(): Filter {

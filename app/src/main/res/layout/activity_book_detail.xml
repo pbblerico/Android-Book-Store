@@ -22,7 +22,7 @@
         android:textColor="@color/dark_p"
         android:textStyle="italic|bold"
         android:textSize="40dp"
-        android:text="Book name"
+        android:text="@string/bookName"
         android:padding="10dp"
         android:layout_marginBottom="20dp"
         ></TextView>
@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description:"
+            android:text="@string/descrTwoDots"
             android:textSize="25dp"
             android:layout_marginRight="40dp"></TextView>
 
@@ -44,7 +44,7 @@
             android:id="@+id/bookDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Author:"
+            android:text="@string/authorTwoDots"
             android:textSize="25dp"></TextView>
 
     </LinearLayout>
@@ -58,7 +58,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Author:"
+                android:text="@string/authorTwoDots"
                 android:textSize="25dp"
                 android:layout_marginRight="40dp"></TextView>
 
@@ -66,7 +66,7 @@
                 android:id="@+id/bookAuth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Author:"
+                android:text="@string/authorTwoDots"
                 android:textSize="25dp"></TextView>
 
         </LinearLayout>
@@ -80,7 +80,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cost:"
+                android:text="@string/costTwoDots"
                 android:textSize="25dp"
                 android:layout_marginRight="40dp"></TextView>
 
@@ -88,7 +88,7 @@
                 android:id="@+id/bookCost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Author:"
+                android:text="@string/authorTwoDots"
                 android:textSize="25dp"></TextView>
 
         </LinearLayout>
@@ -103,7 +103,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Category:"
+                android:text="@string/catTwoDots"
                 android:textSize="25dp"
                 android:layout_marginRight="40dp"></TextView>
 
@@ -111,7 +111,7 @@
                 android:id="@+id/bookCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Author:"
+                android:text="@string/authorTwoDots"
                 android:textSize="25dp"></TextView>
 
         </LinearLayout>

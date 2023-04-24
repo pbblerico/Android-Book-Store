@@ -15,7 +15,7 @@
         android:textColor="@color/dark_p"
         android:textStyle="italic|bold"
         android:textSize="40dp"
-        android:text="Category name"
+        android:text="@string/catName"
         android:padding="10dp"
         android:layout_marginBottom="20dp"
         ></TextView>
@@ -31,7 +31,7 @@
             android:id="@+id/bookET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Book"
+            android:hint="@string/book"
             android:textColorHint="@color/dark_p"
             android:padding="15dp"
             android:layout_weight="1"

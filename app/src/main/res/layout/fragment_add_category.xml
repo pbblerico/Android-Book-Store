@@ -13,7 +13,7 @@
             android:id="@+id/add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add new Category"
+            android:text="@string/addNewCat"
             android:padding="8dp"
             android:textStyle="bold"
             android:layout_weight="1"
@@ -39,7 +39,7 @@
             android:id="@+id/categoryAdd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="New Category"
+            android:hint="@string/newCat"
             android:gravity="center_vertical"
             android:textColorHint="@color/dark_p"
             android:padding="12dp"
@@ -52,7 +52,7 @@
             android:id="@+id/add_btn"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="Add"
+            android:text="@string/add"
             android:background="@drawable/btn_style_white"/>
 
         </LinearLayout>

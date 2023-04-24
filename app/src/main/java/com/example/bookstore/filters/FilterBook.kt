@@ -1,10 +1,8 @@
 package com.example.bookstore.filters
 
 import android.widget.Filter
-import com.example.bookstore.models.AdapterBook
-import com.example.bookstore.models.AdapterCategory
+import com.example.bookstore.fragments.admin.book.AdapterBook
 import com.example.bookstore.models.Book
-import com.example.bookstore.models.Category
 
 class FilterBook: Filter {
     private var filterList: ArrayList<Book>

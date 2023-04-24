@@ -26,39 +26,39 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Book name:"
+            android:textSize="20sp"
+            android:text="@string/bookNameTwoDots"
             android:textStyle="bold"
             android:textColor="@color/dark_p"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Author:"
+            android:textSize="20sp"
+            android:text="@string/authorTwoDots"
             android:textStyle="bold"
             android:textColor="@color/dark_p"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Category:"
+            android:textSize="20sp"
+            android:text="@string/catTwoDots"
             android:textStyle="bold"
             android:textColor="@color/dark_p"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Cost:"
+            android:textSize="20sp"
+            android:text="@string/costTwoDots"
             android:textStyle="bold"
             android:textColor="@color/dark_p"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Description:"
+            android:textSize="20sp"
+            android:text="@string/descrTwoDots"
             android:textStyle="bold"
             android:textColor="@color/dark_p"/>
 
@@ -76,63 +76,72 @@
                 android:id="@+id/bookName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Book name:"
+                android:textSize="20sp"
+                android:text="@string/bookNameTwoDots"
                 android:textColor="@color/dark_p"/>
 
             <TextView
                 android:id="@+id/bookAuth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Author:"
+                android:textSize="20sp"
+                android:text="@string/authorTwoDots"
                 android:textColor="@color/dark_p"/>
 
             <TextView
                 android:id="@+id/bookCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Category:"
+                android:textSize="20sp"
+                android:text="@string/catTwoDots"
                 android:textColor="@color/dark_p"/>
 
             <TextView
                 android:id="@+id/bookCost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Cost:"
+                android:textSize="20sp"
+                android:text="@string/costTwoDots"
                 android:textColor="@color/dark_p"/>
             <TextView
                 android:id="@+id/bookDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Description:"
+                android:textSize="20sp"
+                android:text="@string/descrTwoDots"
                 android:textStyle="bold"
                 android:textColor="@color/dark_p"/>
 
         </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/updateBtn"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            android:layout_toRightOf="@id/info"
-            android:src="@drawable/baseline_update"
-            android:background="@null"/>
+            android:orientation="vertical"
+            android:layout_gravity="center">
 
-        <ImageButton
-            android:id="@+id/deleteBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            android:layout_toRightOf="@id/info"
-            android:src="@drawable/baseline_delete"
-            android:background="@null"/>
+            <ImageButton
+                android:id="@+id/updateBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@id/info"
+                android:src="@drawable/baseline_update"
+                android:background="@null"/>
+
+
+            <ImageButton
+                android:id="@+id/deleteBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_toRightOf="@id/info"
+                android:src="@drawable/baseline_delete"
+                android:background="@null"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

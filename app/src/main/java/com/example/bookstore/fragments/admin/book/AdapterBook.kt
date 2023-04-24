@@ -1,4 +1,4 @@
-package com.example.bookstore.models
+package com.example.bookstore.fragments.admin.book
 
 import android.app.AlertDialog
 import android.content.Context
@@ -9,15 +9,11 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import androidx.recyclerview.widget.RecyclerView
 import com.example.bookstore.activity.BookDetailActivity
 import com.example.bookstore.activity.EditBookActivity
-import com.example.bookstore.activity.EditCategoryActivity
-import com.example.bookstore.activity.UserActivity
 import com.example.bookstore.databinding.BookRowBinding
-import com.example.bookstore.databinding.CategoryRowBinding
 import com.example.bookstore.filters.FilterBook
-import com.example.bookstore.filters.FilterCategory
+import com.example.bookstore.models.Book
 import com.google.firebase.database.FirebaseDatabase
 
 class AdapterBook: Adapter<AdapterBook.HolderBook>, Filterable{
@@ -82,9 +78,10 @@ class AdapterBook: Adapter<AdapterBook.HolderBook>, Filterable{
             intent.putExtra("bookId", id)
             context.startActivity(intent)
         }
+
     }
 
-    fun delete(model: Book, holder: AdapterBook.HolderBook) {
+    fun delete(model: Book, holder: HolderBook) {
         val builder = AlertDialog.Builder(context)
         builder.setTitle("Delete")
             .setMessage("Are you sure you want to delete this category?")
@@ -97,7 +94,7 @@ class AdapterBook: Adapter<AdapterBook.HolderBook>, Filterable{
             }.show()
     }
 
-    private fun deleteBook(model: Book, holder: AdapterBook.HolderBook) {
+    private fun deleteBook(model: Book, holder: HolderBook) {
         val id = model.id
 
         val ref = FirebaseDatabase.getInstance().getReference("Books")

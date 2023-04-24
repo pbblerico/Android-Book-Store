@@ -1,7 +1,6 @@
 package com.example.bookstore.filters
 
 import android.widget.Filter
-import com.example.bookstore.models.AdapterBook
 import com.example.bookstore.models.AdapterBookUser
 import com.example.bookstore.models.Book
 

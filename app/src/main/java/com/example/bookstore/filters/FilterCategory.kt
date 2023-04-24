@@ -1,6 +1,6 @@
 package com.example.bookstore.filters
 
-import com.example.bookstore.models.AdapterCategory
+import com.example.bookstore.fragments.admin.category.AdapterCategory
 import com.example.bookstore.models.Category
 import android.widget.Filter
 

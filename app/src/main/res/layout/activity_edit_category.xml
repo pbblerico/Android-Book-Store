@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -18,18 +17,18 @@
             android:id="@+id/btn_return"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
             android:src="@drawable/baseline_return"
             android:background="@drawable/btn_style"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Update Category"
+            android:text="@string/udpCat"
             android:padding="8dp"
             android:textStyle="bold"
             android:layout_weight="1"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textColor="@color/dark_p"
             android:layout_marginBottom="10dp"/>
 
@@ -43,7 +42,7 @@
         android:padding="8dp"
         android:textStyle="bold"
         android:layout_weight="1"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textColor="@color/dark_p"
         android:layout_marginBottom="10dp"/>
 
@@ -51,9 +50,9 @@
         android:id="@+id/categoryName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Category name"
+        android:hint="@string/catName"
         android:padding="8dp"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:background="@drawable/rounded_form"
         android:layout_marginBottom="10dp"/>
 
@@ -63,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:text="Update"
+            android:text="@string/upd"
             android:background="@drawable/btn_style"
             />
 

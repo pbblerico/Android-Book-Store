@@ -22,7 +22,7 @@
             android:id="@+id/categoryTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category Title"
+            android:text="@string/catTitle"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:textSize="20dp"

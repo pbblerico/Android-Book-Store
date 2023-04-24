@@ -1,4 +1,4 @@
-package com.example.bookstore.models
+package com.example.bookstore.fragments.admin.category
 
 import android.app.AlertDialog
 import android.content.Context
@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.bookstore.activity.EditCategoryActivity
 import com.example.bookstore.databinding.CategoryRowBinding
 import com.example.bookstore.filters.FilterCategory
+import com.example.bookstore.models.Category
 import com.google.firebase.database.FirebaseDatabase
 
 class AdapterCategory: Adapter<AdapterCategory.HolderCategory>, Filterable {

@@ -9,14 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.bookstore.R
-import com.example.bookstore.databinding.FragmentSearchBarBinding
 import com.example.bookstore.databinding.FragmentSearchBookBinding
-import com.example.bookstore.fragments.admin.category.AddCategoryFragment
-import com.example.bookstore.fragments.admin.category.CategoryFragment
-import com.example.bookstore.models.AdapterBook
-import com.example.bookstore.models.AdapterCategory
 import com.example.bookstore.models.Book
-import com.example.bookstore.models.Category
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase

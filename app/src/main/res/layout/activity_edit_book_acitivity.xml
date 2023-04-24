@@ -25,7 +25,7 @@
             android:id="@+id/add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Update Book"
+            android:text="@string/updBook"
             android:padding="8dp"
             android:textStyle="bold"
             android:layout_weight="1"
@@ -62,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Book name:"
+                    android:text="@string/bookNameTwoDots"
                     android:textStyle="bold"
                     android:textColor="@color/dark_p"/>
 
@@ -70,7 +70,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Author:"
+                    android:text="@string/authorTwoDots"
                     android:textStyle="bold"
                     android:textColor="@color/dark_p"/>
 
@@ -78,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Category:"
+                    android:text="@string/catTwoDots"
                     android:textStyle="bold"
                     android:textColor="@color/dark_p"/>
 
@@ -86,14 +86,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Cost:"
+                    android:text="@string/costTwoDots"
                     android:textStyle="bold"
                     android:textColor="@color/dark_p"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Description:"
+                    android:text="@string/descrTwoDots"
                     android:textStyle="bold"
                     android:textColor="@color/dark_p"/>
 
@@ -112,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Book name:"
+                    android:text="@string/bookNameTwoDots"
                     android:textColor="@color/dark_p"/>
 
                 <TextView
@@ -120,7 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Author:"
+                    android:text="@string/authorTwoDots"
                     android:textColor="@color/dark_p"/>
 
                 <TextView
@@ -128,7 +128,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Category:"
+                    android:text="@string/catTwoDots"
                     android:textColor="@color/dark_p"/>
 
                 <TextView
@@ -136,14 +136,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Cost:"
+                    android:text="@string/costTwoDots"
                     android:textColor="@color/dark_p"/>
                 <TextView
                     android:id="@+id/bookDesc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20dp"
-                    android:text="Description:"
+                    android:text="@string/descrTwoDots"
                     android:textStyle="bold"
                     android:textColor="@color/dark_p"/>
 
@@ -156,7 +156,7 @@
         android:id="@+id/bookName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Book name"
+        android:hint="@string/bookName"
         android:padding="8dp"
         android:textSize="25dp"
         android:background="@drawable/rounded_form"
@@ -165,7 +165,7 @@
         android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Description"
+        android:hint="@string/descr"
         android:padding="8dp"
         android:textSize="25dp"
         android:background="@drawable/rounded_form"
@@ -179,7 +179,7 @@
             android:id="@+id/author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Author"
+            android:hint="@string/author"
             android:layout_weight="1"
             android:padding="8dp"
             android:layout_marginRight="10dp"
@@ -192,7 +192,7 @@
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:hint="Cost"
+            android:hint="@string/price"
             android:padding="8dp"
             android:textSize="25dp"
             android:background="@drawable/rounded_form"
@@ -208,7 +208,7 @@
             android:id="@+id/category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category"
+            android:text="@string/category"
             android:padding="8dp"
             android:layout_weight="1"
             android:textSize="25dp"
@@ -223,7 +223,7 @@
             android:layout_weight="1"
             android:layout_gravity="fill_vertical"
             android:layout_marginLeft="30dp"
-            android:text="Update"
+            android:text="@string/upd"
             android:background="@drawable/btn_style"
             />
     </LinearLayout>

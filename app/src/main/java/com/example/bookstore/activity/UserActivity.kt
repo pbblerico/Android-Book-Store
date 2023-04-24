@@ -1,5 +1,6 @@
 package com.example.bookstore.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -10,6 +11,7 @@ import com.example.bookstore.enums.UserState
 import com.example.bookstore.fragments.admin.AdminManageFragment
 import com.example.bookstore.fragments.authorization.InitFragment
 import com.example.bookstore.fragments.user.CategoryFragmentUser
+import com.example.bookstore.fragments.user.SettingsFragment
 import com.example.bookstore.fragments.user.ShowBooksFragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -73,17 +75,24 @@ class UserActivity : AppCompatActivity() {
         val fragment = when(it.itemId) {
             R.id.manage -> AdminManageFragment()
             R.id.books -> ShowBooksFragment()
-            else -> InitFragment()
+            R.id.sett -> SettingsFragment()
+            R.id.catalog -> CategoryFragmentUser()
+            else -> ShowBooksFragment()
         }
         return fragment
     }
 
+    fun finishActivity() {
+        startActivity(Intent(this, MainActivity::class.java))
+        finish()
+    }
+
     private fun userBottomNavBar(it: MenuItem): Fragment {
         val fragment = when(it.itemId) {
-//            R.id.manage -> AdminManageFragment()
             R.id.catalog -> CategoryFragmentUser()
             R.id.home -> ShowBooksFragment()
-            else -> InitFragment()
+            R.id.sett -> SettingsFragment()
+            else -> ShowBooksFragment()
         }
         return fragment
     }

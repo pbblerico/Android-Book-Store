@@ -20,7 +20,7 @@
         android:id="@+id/categoryET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Category"
+        android:hint="@string/category"
         android:textColorHint="@color/dark_p"
         android:padding="15dp"
         android:layout_weight="1"
