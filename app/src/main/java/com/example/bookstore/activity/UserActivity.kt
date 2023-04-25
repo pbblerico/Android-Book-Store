@@ -10,6 +10,7 @@ import com.example.bookstore.databinding.ActivityUserBinding
 import com.example.bookstore.enums.UserState
 import com.example.bookstore.fragments.admin.AdminManageFragment
 import com.example.bookstore.fragments.authorization.InitFragment
+import com.example.bookstore.fragments.user.CartFragment
 import com.example.bookstore.fragments.user.CategoryFragmentUser
 import com.example.bookstore.fragments.user.SettingsFragment
 import com.example.bookstore.fragments.user.ShowBooksFragment
@@ -77,7 +78,7 @@ class UserActivity : AppCompatActivity() {
             R.id.books -> ShowBooksFragment()
             R.id.sett -> SettingsFragment()
             R.id.catalog -> CategoryFragmentUser()
-            else -> ShowBooksFragment()
+            else -> CartFragment()
         }
         return fragment
     }

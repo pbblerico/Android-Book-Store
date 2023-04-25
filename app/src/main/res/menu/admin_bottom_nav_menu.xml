@@ -14,8 +14,8 @@
 
     <item
         android:id="@+id/books"
-        android:title="@string/books"
-        android:icon="@drawable/baseline_books"
+        android:title="home"
+        android:icon="@drawable/baseline_home_24"
         />
 
     <item
